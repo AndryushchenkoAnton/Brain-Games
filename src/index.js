@@ -5,11 +5,13 @@ const quastionArr = [
   'Answer "yes" if the number is even, otherwise answer "no".',
   'What is the result of the expression?',
   'Find the greatest common divisor of given numbers.',
+  'What number is missing in the progression?',
 ];
 const games = [
   'gameEven',
   'gameCalc',
   'gameGCD',
+  'gameProgression',
 ];
 
 const gameStart = (game) => {
