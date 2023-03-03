@@ -4,10 +4,12 @@ import greetings from './cli.js';
 const quastionArr = [
   'Answer "yes" if the number is even, otherwise answer "no".',
   'What is the result of the expression?',
+  'Find the greatest common divisor of given numbers.',
 ];
 const games = [
   'gameEven',
   'gameCalc',
+  'gameGCD',
 ];
 
 const gameStart = (game) => {
