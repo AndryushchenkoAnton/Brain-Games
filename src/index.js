@@ -6,12 +6,14 @@ const quastionArr = [
   'What is the result of the expression?',
   'Find the greatest common divisor of given numbers.',
   'What number is missing in the progression?',
+  'Answer "yes" if given number is prime. Otherwise answer "no".',
 ];
 const games = [
   'gameEven',
   'gameCalc',
   'gameGCD',
   'gameProgression',
+  'gamePrime',
 ];
 
 const gameStart = (game) => {

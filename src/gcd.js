@@ -18,4 +18,5 @@ const gameGCD = () => {
   console.log(`Question: ${numb1} ${numb2}`);
   return getGCD(numb1, numb2);
 };
+
 export default gameGCD;

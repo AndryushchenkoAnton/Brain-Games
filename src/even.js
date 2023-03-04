@@ -5,4 +5,5 @@ const gameEven = () => {
   console.log(`Question: ${curnumb}`);
   return numbtype(curnumb);
 };
+
 export default gameEven;
