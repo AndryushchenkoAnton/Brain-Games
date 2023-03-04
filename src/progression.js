@@ -22,7 +22,7 @@ const gameProgression = () => {
     }
     quastionline = `${quastionline} ${progArr[i]}`;
   }
-  console.log(`Question: ${quastionline}`);
+  console.log(`Question:  ${quastionline}`);
   return correctans(stepPr, emptyEl, firstEl);
 };
 
