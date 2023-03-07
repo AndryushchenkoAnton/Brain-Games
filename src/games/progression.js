@@ -3,7 +3,7 @@ import getRandomInRange from '../utils.js';
 const correctans = (step, pos, first) => first + (step * pos);
 const gameProgression = () => {
   const progLeng = getRandomInRange(5, 10);
-  const emptyEl = getRandomInRange(2, progLeng);
+  const emptyEl = getRandomInRange(1, progLeng-1);
   const stepPr = getRandomInRange(5, 10);
   const firstEl = getRandomInRange(1, 100);
   let questionline = '';
