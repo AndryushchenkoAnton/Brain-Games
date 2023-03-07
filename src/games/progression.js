@@ -6,7 +6,7 @@ const gameProgression = () => {
   const emptyEl = getRandomInRange(2, progLeng);
   const stepPr = getRandomInRange(5, 10);
   const firstEl = getRandomInRange(1, 100);
-  let questionline = '';
+  let questionline = ' ';
   let start = true;
   for (let i = 0; i < progLeng; i += 1) {
     if (i === emptyEl) {

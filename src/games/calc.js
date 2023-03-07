@@ -19,7 +19,7 @@ const gameCalc = () => {
   const secNumb = getRandomInRange(1, 100);
   const op = getRandomInRange(2, 0);
   const answer = calculate(firstNumb, operArr[op], secNumb);
-  const question = `${firstNumb} ${operArr[op]} ${secNumb}`;
+  const question = ` ${firstNumb} ${operArr[op]} ${secNumb}`;
   return [question, answer];
 };
 

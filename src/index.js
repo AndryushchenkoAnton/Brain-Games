@@ -9,7 +9,7 @@ const gameStart = (game, info) => {
   console.log(info);
   for (let i = 0; i < GAME_ROUND; i += 1) {
     const [question, coranswer] = game();
-    console.log(`Question: ${question}`);
+    console.log(`Question:${question}`);
     const answer = readlineSync.question('Your answer: ');
     if (coranswer.toString() === answer) {
       console.log('Correct!');
