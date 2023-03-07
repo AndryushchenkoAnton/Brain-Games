@@ -1,6 +1,5 @@
 # .eslintrc.yml
 env:
-  browser: true
   es2020: true
 extends:
   - airbnb-base

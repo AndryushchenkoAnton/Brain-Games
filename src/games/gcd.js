@@ -1,4 +1,5 @@
-const getrand = () => Math.floor(Math.random() * (100 - 1 + 1)) + 1;
+import getRandomInRange from '../utils.js';
+
 const getGCD = (number1, number2) => {
   const min = (number1 - number2) < 0 ? number2 : number1;
   let gcd = 1;
@@ -13,10 +14,11 @@ const getGCD = (number1, number2) => {
 };
 
 const gameGCD = () => {
-  const numb1 = getrand();
-  const numb2 = getrand();
-  console.log(`Question: ${numb1} ${numb2}`);
-  return getGCD(numb1, numb2);
+  const numb1 = getRandomInRange(1, 100);
+  const numb2 = getRandomInRange(1, 100);
+  const question = `${numb1} ${numb2}`;
+  const answer = getGCD(numb1, numb2);
+  return [question, answer];
 };
 
 export default gameGCD;

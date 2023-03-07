@@ -1,4 +1,5 @@
-const getrandNumb = () => Math.floor(Math.random() * (50 - 1 + 1)) + 1;
+import getRandomInRange from '../utils.js';
+
 const numbType = (number) => {
   for (let i = number - 1; i > 1; i -= 1) {
     if (number % i === 0) {
@@ -8,9 +9,10 @@ const numbType = (number) => {
   return 'yes';
 };
 const gamePrime = () => {
-  const curnumb = getrandNumb();
-  console.log(`Question: ${curnumb}`);
-  return numbType(curnumb);
+  const curnumb = getRandomInRange(50, 1);
+  const question = curnumb;
+  const answer = numbType(curnumb);
+  return [question, answer];
 };
 
 export default gamePrime;
