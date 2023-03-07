@@ -24,4 +24,7 @@ brain-progression:
              node bin/games/brain-progression.js
 
 brain-prime:
-              node bin/games/brain-prime.js
+             node bin/games/brain-prime.js
+
+fix:
+             npx eslint --fix .

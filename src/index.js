@@ -8,7 +8,7 @@ const gameStart = (game, info) => {
   console.log(`Hello, ${name}!`);
   console.log(info);
   for (let i = 0; i < GAME_ROUND; i += 1) {
-    const [question,coranswer] = game();
+    const [question, coranswer] = game();
     console.log(`Question:${question}`);
     const answer = readlineSync.question('Your answer: ');
     if (coranswer.toString() === answer) {
