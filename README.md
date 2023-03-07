@@ -6,3 +6,8 @@
 [![asciicast](https://asciinema.org/a/SHPtOpmy9GLiahb9g3L78VIJ4.svg)](https://asciinema.org/a/SHPtOpmy9GLiahb9g3L78VIJ4)
 [![asciicast](https://asciinema.org/a/ThKj1CLcSaPvj34JSyqDR7XOH.svg)](https://asciinema.org/a/ThKj1CLcSaPvj34JSyqDR7XOH)
 [![asciicast](https://asciinema.org/a/qx35SOgU5b167epoooy3kJBpI.svg)](https://asciinema.org/a/qx35SOgU5b167epoooy3kJBpI)
+Инстркция:
+1)Открыть репозиторий Git
+2)Code -> Download ZIP
+3)Ввести в терминал команды "make install" и "npm link" 
+4)Запустить игру(пример:brain-calc)
