@@ -16,7 +16,7 @@ const gameProgression = () => {
       start = false;
     } else {
       const element = firstEl + (i * stepPr);
-      questionline = `${questionline} ${element}`;
+      questionline = `${questionline}${element}`;
     }
   }
   const question = questionline;
