@@ -18,8 +18,8 @@ const startGame = (generateRound, rules) => {
       console.log(`Let's try again, ${name}!`);
       return;
     }
-    console.log(`Congratulations, ${name}!`);
   }
+  console.log(`Congratulations, ${name}!`);
 };
 
 export default startGame;
