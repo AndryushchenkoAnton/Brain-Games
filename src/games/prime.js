@@ -12,7 +12,7 @@ const gamePrime = () => {
   const curnumb = getRandomInRange(50, 1);
   const question = ` ${curnumb}`;
   const answer = numbType(curnumb);
-  return [question, answer];
+  return [question, answer.toString()];
 };
 
 export default gamePrime;

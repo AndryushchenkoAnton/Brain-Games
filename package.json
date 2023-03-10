@@ -2,7 +2,7 @@
   "name": "@hexlet/code",
   "version": "1.0.0",
   "type": "module",
-  "description": "Игры разума.Набор из 5 игр.",
+  "description": "Mind Games.The pack of five games.",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

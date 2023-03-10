@@ -1,6 +1,6 @@
 import getRandomInRange from '../utils.js';
 
-const correctans = (step, pos, first) => first + (step * pos);
+const correctAnswer = (step, pos, first) => first + (step * pos);
 const gameProgression = () => {
   const progLeng = getRandomInRange(5, 10);
   const emptyEl = getRandomInRange(1, progLeng - 1);
@@ -20,8 +20,8 @@ const gameProgression = () => {
     }
   }
   const question = questionline;
-  const answer = correctans(stepPr, emptyEl, firstEl);
-  return [question, answer];
+  const answer = correctAnswer(stepPr, emptyEl, firstEl);
+  return [question, answer.toString()];
 };
 
 export default gameProgression;

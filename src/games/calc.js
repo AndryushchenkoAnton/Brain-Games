@@ -20,7 +20,7 @@ const gameCalc = () => {
   const op = getRandomInRange(2, 0);
   const answer = calculate(firstNumb, operArr[op], secNumb);
   const question = ` ${firstNumb} ${operArr[op]} ${secNumb}`;
-  return [question, answer];
+  return [question, answer.toString()];
 };
 
 export default gameCalc;

@@ -6,8 +6,11 @@
 [![asciicast](https://asciinema.org/a/SHPtOpmy9GLiahb9g3L78VIJ4.svg)](https://asciinema.org/a/SHPtOpmy9GLiahb9g3L78VIJ4)
 [![asciicast](https://asciinema.org/a/ThKj1CLcSaPvj34JSyqDR7XOH.svg)](https://asciinema.org/a/ThKj1CLcSaPvj34JSyqDR7XOH)
 [![asciicast](https://asciinema.org/a/qx35SOgU5b167epoooy3kJBpI.svg)](https://asciinema.org/a/qx35SOgU5b167epoooy3kJBpI)
-Инстркция:
-1)Открыть репозиторий Git
-2)Code -> Download ZIP
-3)Ввести в терминал команды "make install" и "npm link" 
-4)Запустить игру(пример:brain-calc)
+Manual:
+1)Open  your term.
+2)git clone git@github.com:<Your_Git_Name>/frontend-project-44.git
+3)Enter the project
+4)Use commands in terminal "make install" and "npm link"
+5)Enter 'bin' dir, you'll find there all games
+5)You can use 'make <GAME_NAME>' or '<Game_Name>' to start playing.
+6)Enjoy it !!
