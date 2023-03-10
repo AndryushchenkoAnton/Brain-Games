@@ -13,4 +13,4 @@ Manual:
 4)Use commands in terminal "make install" and "npm link"
 5)Enter 'bin' dir, you'll find there all games
 5)You can use 'make <GAME_NAME>' or '<Game_Name>' to start playing.
-6)Enjoy it !!
+6)Enjoy it !!!
