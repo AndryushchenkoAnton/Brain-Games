@@ -24,7 +24,7 @@ const generateRound = () => {
   const secondNumber = getRandomInRange(1, 100);
   const randomIndex = getRandomOperator();
   const answer = calculate(firstNumber, randomIndex, secondNumber).toString();
-  const question = ` ${firstNumber} ${randomIndex} ${secondNumber}`;
+  const question = `${firstNumber} ${randomIndex} ${secondNumber}`;
   return [question, answer];
 };
 

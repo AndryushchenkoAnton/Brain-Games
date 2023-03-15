@@ -11,7 +11,7 @@ const getGCD = (number1, number2) => {
 const generateRound = () => {
   const firstNumber = getRandomInRange(1, 100);
   const secondNumber = getRandomInRange(1, 100);
-  const question = ` ${firstNumber} ${secondNumber}`;
+  const question = `${firstNumber} ${secondNumber}`;
   const answer = getGCD(firstNumber, secondNumber).toString();
   return [question, answer];
 };
