@@ -1,4 +1,5 @@
 import getRandomInRange from '../utils.js';
+import runEngine from '../index.js';
 
 const getGCD = (number1, number2) => {
   if (!number2) {
@@ -7,12 +8,14 @@ const getGCD = (number1, number2) => {
   return getGCD(number2, number1 % number2);
 };
 
-const gameGCD = () => {
-  const numb1 = getRandomInRange(1, 100);
-  const numb2 = getRandomInRange(1, 100);
-  const question = ` ${numb1} ${numb2}`;
-  const answer = getGCD(numb1, numb2);
-  return [question, answer.toString()];
+const generateRound = () => {
+  const firstNumber = getRandomInRange(1, 100);
+  const secondNumber = getRandomInRange(1, 100);
+  const question = ` ${firstNumber} ${secondNumber}`;
+  const answer = getGCD(firstNumber, secondNumber).toString();
+  return [question, answer];
 };
 
-export default gameGCD;
+const Description = 'Find the greatest common divisor of given numbers.';
+
+export default () => { runEngine(generateRound, Description); };

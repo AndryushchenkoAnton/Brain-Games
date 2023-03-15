@@ -1,11 +1,13 @@
 import getRandomInRange from '../utils.js';
+import runEngine from '../index.js';
 
-const numbtype = (numb) => (numb % 2 === 0 ? 'yes' : 'no');
-const gameEven = () => {
-  const curnumb = getRandomInRange(1, 100);
-  const question = ` ${curnumb}`;
-  const answer = numbtype(curnumb);
-  return [question, answer.toString()];
+const isEven = (num) => num % 2 === 0;
+const generateRound = () => {
+  const currentNumber = getRandomInRange(1, 100);
+  const question = ` ${currentNumber}`;
+  const answer = isEven(currentNumber) ? 'yes' : 'no';
+  return [question, answer];
 };
 
-export default gameEven;
+const Description = 'Answer "yes" if the number is even, otherwise answer "no".';
+export default () => { runEngine(generateRound, Description); };

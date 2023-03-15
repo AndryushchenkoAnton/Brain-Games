@@ -1,27 +1,28 @@
 import getRandomInRange from '../utils.js';
+import runEngine from '../index.js';
 
-const correctAnswer = (step, pos, first) => first + (step * pos);
-const gameProgression = () => {
-  const progLeng = getRandomInRange(5, 10);
-  const emptyEl = getRandomInRange(1, progLeng - 1);
-  const stepPr = getRandomInRange(5, 10);
-  const firstEl = getRandomInRange(1, 100);
-  let questionline = '';
-  let start = true;
-  for (let i = 0; i < progLeng; i += 1) {
-    if (i === emptyEl) {
-      questionline = `${questionline} ..`;
-    } else if (start) {
-      questionline = `${questionline} ${firstEl}`;
-      start = false;
-    } else {
-      const element = firstEl + (i * stepPr);
-      questionline = `${questionline} ${element}`;
-    }
+const makeProgression = (first, step, length) => {
+  const progression = [];
+  for (let i = 0; i < length; i += 1) {
+    progression.push(first + step * i);
   }
-  const question = questionline;
-  const answer = correctAnswer(stepPr, emptyEl, firstEl);
-  return [question, answer.toString()];
+  return progression;
 };
 
-export default gameProgression;
+const correctAnswer = (step, pos, first) => first + (step * pos);
+
+const generateRound = () => {
+  const progressionLength = getRandomInRange(5, 10);
+  const hiddenIndex = getRandomInRange(1, progressionLength - 1);
+  const step = getRandomInRange(5, 10);
+  const firstElement = getRandomInRange(1, 100);
+  const progression = makeProgression(firstElement, step, progressionLength);
+  progression[hiddenIndex] = '..';
+  const question = progression.join(' ');
+  const answer = correctAnswer(step, hiddenIndex, firstElement).toString();
+  return [question, answer];
+};
+
+const Description = 'What number is missing in the progression?';
+
+export default () => { runEngine(generateRound, Description); };

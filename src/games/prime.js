@@ -1,18 +1,21 @@
 import getRandomInRange from '../utils.js';
+import runEngine from '../index.js';
 
-const numbType = (number) => {
+const isPrime = (number) => {
   for (let i = number - 1; i > 1; i -= 1) {
     if (number % i === 0) {
-      return 'no';
+      return false;
     }
   }
-  return 'yes';
+  return true;
 };
-const gamePrime = () => {
-  const curnumb = getRandomInRange(50, 1);
-  const question = ` ${curnumb}`;
-  const answer = numbType(curnumb);
-  return [question, answer.toString()];
+const generateRound = () => {
+  const currentNumber = getRandomInRange(50, 1);
+  const question = ` ${currentNumber}`;
+  const answer = isPrime(currentNumber) ? 'yes' : 'no';
+  return [question, answer];
 };
 
-export default gamePrime;
+const Description = 'Answer "yes" if given number is prime. Otherwise answer "no".';
+
+export default () => { runEngine(generateRound, Description); };
