@@ -7,7 +7,7 @@
     - 3)Enter the project
     - 4)Use commands in terminal "make install" and "npm link"
     - 5)Enter 'bin' dir, you'll find there all games
-    - 6)You can use 'make <GAME_NAME>' or '<Game_Name>' to start playing.
+    - 6)You can use 'make <GAME_NAME>' or '<Game_Name>' to start the game.
     - 7)Enjoy it !!!
 
 + Brain-Games
