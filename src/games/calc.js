@@ -14,8 +14,8 @@ const calculate = (number1, operation, number2) => {
       return number1 - number2;
     case '*':
       return number1 * number2;
-    default:
-      return null;
+
+    default: throw new Error(`Operator ${operation} - is incorrect!`);
   }
 };
 
@@ -28,6 +28,6 @@ const generateRound = () => {
   return [question, answer];
 };
 
-const Description = 'What is the result of the expression?';
+const description = 'What is the result of the expression?';
 
-export default () => { runEngine(generateRound, Description); };
+export default () => runEngine(generateRound, description);

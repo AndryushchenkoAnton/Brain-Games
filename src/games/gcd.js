@@ -16,6 +16,6 @@ const generateRound = () => {
   return [question, answer];
 };
 
-const Description = 'Find the greatest common divisor of given numbers.';
+const description = 'Find the greatest common divisor of given numbers.';
 
-export default () => { runEngine(generateRound, Description); };
+export default () => runEngine(generateRound, description);

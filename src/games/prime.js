@@ -9,13 +9,14 @@ const isPrime = (number) => {
   }
   return true;
 };
+
 const generateRound = () => {
-  const currentNumber = getRandomInRange(50, 1);
+  const currentNumber = getRandomInRange(1, 50);
   const question = `${currentNumber}`;
   const answer = isPrime(currentNumber) ? 'yes' : 'no';
   return [question, answer];
 };
 
-const Description = 'Answer "yes" if given number is prime. Otherwise answer "no".';
+const description = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
-export default () => { runEngine(generateRound, Description); };
+export default () => runEngine(generateRound, description);
