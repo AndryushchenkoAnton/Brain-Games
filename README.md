@@ -3,7 +3,7 @@
 <a href="https://codeclimate.com/github/AndryushchenkoAnton/frontend-project-44/maintainability"><img src="https://api.codeclimate.com/v1/badges/f65de0db48c5c815e951/maintainability" /></a>
 - Manual:
     - 1)Open  your term. 
-    - 2)git clone git@github.com:<Your_Git_Name>/Brain-Games.git
+    - 2)git clone git@github.com:<Your_Git_Name>/BrainGames.git
     - 3)Enter the project
     - 4)Use commands in terminal "make install" and "npm link"
     - 5)Enter 'bin' dir, you'll find there all games
